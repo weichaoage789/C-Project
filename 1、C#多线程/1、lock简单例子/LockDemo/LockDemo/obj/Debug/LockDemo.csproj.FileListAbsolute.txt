@@ -1,0 +1,7 @@
+C:\Users\54271\Desktop\C#多线程\1、lock简单例子\LockDemo\LockDemo\bin\Debug\LockDemo.exe.config
+C:\Users\54271\Desktop\C#多线程\1、lock简单例子\LockDemo\LockDemo\bin\Debug\LockDemo.exe
+C:\Users\54271\Desktop\C#多线程\1、lock简单例子\LockDemo\LockDemo\bin\Debug\LockDemo.pdb
+C:\Users\54271\Desktop\C#多线程\1、lock简单例子\LockDemo\LockDemo\obj\Debug\LockDemo.csprojAssemblyReference.cache
+C:\Users\54271\Desktop\C#多线程\1、lock简单例子\LockDemo\LockDemo\obj\Debug\LockDemo.csproj.CoreCompileInputs.cache
+C:\Users\54271\Desktop\C#多线程\1、lock简单例子\LockDemo\LockDemo\obj\Debug\LockDemo.exe
+C:\Users\54271\Desktop\C#多线程\1、lock简单例子\LockDemo\LockDemo\obj\Debug\LockDemo.pdb
