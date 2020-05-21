@@ -1,0 +1,7 @@
+C:\Users\54271\Desktop\github\WPF_Project\2、TCP通信\Sever\TcpSever\TcpSever\bin\Debug\TcpSever.exe.config
+C:\Users\54271\Desktop\github\WPF_Project\2、TCP通信\Sever\TcpSever\TcpSever\bin\Debug\TcpSever.exe
+C:\Users\54271\Desktop\github\WPF_Project\2、TCP通信\Sever\TcpSever\TcpSever\bin\Debug\TcpSever.pdb
+C:\Users\54271\Desktop\github\WPF_Project\2、TCP通信\Sever\TcpSever\TcpSever\obj\Debug\TcpSever.csprojAssemblyReference.cache
+C:\Users\54271\Desktop\github\WPF_Project\2、TCP通信\Sever\TcpSever\TcpSever\obj\Debug\TcpSever.csproj.CoreCompileInputs.cache
+C:\Users\54271\Desktop\github\WPF_Project\2、TCP通信\Sever\TcpSever\TcpSever\obj\Debug\TcpSever.exe
+C:\Users\54271\Desktop\github\WPF_Project\2、TCP通信\Sever\TcpSever\TcpSever\obj\Debug\TcpSever.pdb
