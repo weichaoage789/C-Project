@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace TcpSever
@@ -27,15 +28,45 @@ namespace TcpSever
             SeverSocket.Bind(SeverPoint);
             /*4、开启监听*/
             SeverSocket.Listen(0);
-            /*5、开启监听*/
-            Socket ClientSocket = SeverSocket.Accept();
-            IPEndPoint ClientPotin = ClientSocket.RemoteEndPoint as IPEndPoint;
-            Console.WriteLine("客户端：" + ClientPotin.Address + "已连接");
-          
+            /*5、接收连接*/
+            while (true)
+            {
+                Socket ClientSocket = SeverSocket.Accept();
+                Thread ClientRWThead = new Thread(TcpWR);
+                ClientRWThead.Start(ClientSocket);
+                IPEndPoint iPEndPoint = ClientSocket.RemoteEndPoint as IPEndPoint;
+                Console.WriteLine(iPEndPoint.Address + "已连接");
+            }
             
-
+                     
+           
             return 0;
             
         }
+
+        /*TCP收发函数*/
+        public static void TcpWR(object socket)
+        {
+            Socket clientSocket = socket as Socket;
+            byte[] ReadBuff = new byte[1024];
+            int ReciveNumber;
+            while (true)
+            {
+                /*6、接收数据*/
+                ReciveNumber = clientSocket.Receive(ReadBuff);
+                /*8、断开连接*/
+                if (ReciveNumber == 0)
+                {
+                    IPEndPoint iPEndPoint = clientSocket.RemoteEndPoint as IPEndPoint;
+                    Console.WriteLine(iPEndPoint.Address + "已断开");
+                    return ;
+                }
+                /*7、发送数据*/
+                clientSocket.Send(ReadBuff,ReciveNumber,0);
+                
+            }
+        }
     }
+
+  
 }
