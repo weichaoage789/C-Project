@@ -15,6 +15,7 @@ namespace LockDemo
         }
         public static void thread2handle()
         {
+            //添加测试
             PrintStr("子线程2");
         }
         static void Main(string[] args)
